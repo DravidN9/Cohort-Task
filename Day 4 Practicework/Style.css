@@ -1,0 +1,166 @@
+
+ 
+/* Sab elements ke liye default margins aur paddings ko reset karo, aur box-sizing set karo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Html aur body ko full viewport height aur width ensure karo */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Main container rounded corners ke saath aur relative positioning ke saath */
+.main{
+  width: 96%;
+height: 94vh;
+border-radius: 30px;
+overflow: hidden;
+position: relative;
+margin: 20px auto;
+
+}
+
+/* Main image absolutely positioned with transforms */
+.main .Main-image{
+    width: 720px;
+    position: absolute;
+    right: 30%;
+    bottom:40px;
+    z-index: 5;
+    -webkit-transform: translateX(30%);
+    -moz-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    -o-transform: translateX(30%);
+    transform: translateX(30%);
+}
+
+/* Left side container yellow background ke saath */
+#left-side-container{
+
+    width:62%;
+    background-color:  #ffd400;
+    position: absolute;
+height: 100%;
+}
+
+/* Left container mein logo image */
+#left-side-container img{
+    
+ width:300px;
+
+  position:absolute;
+  top:40px;
+  left:40px;
+}
+
+/* Left container mein subtitle */
+#left-side-container h3{
+    position: absolute;
+    top: 28%;
+    left:40px;
+    letter-spacing: 10px;
+
+    font-size: 30px;
+
+    font-weight: 800;
+}
+
+/* Left container mein main heading */
+#left-side-container #main-heading{
+    font-size: 130px;
+font-weight: 800;
+line-height: 120px;
+    position: absolute;
+    top: 38%;
+    left:40px;
+    font-family: Poppins ExtraBold;
+   
+    
+}
+
+/* Left container mein paragraph text */
+#left-side-container p{
+    position: absolute;
+    top: 54%;
+    left: 40px;
+    width: 600px;
+   font-size: 20px;
+line-height: 1.8;
+font-weight: 500;
+font-family: poppins medium;
+color:#2f2f2f;
+    
+}
+
+/* Left container mein pagination text */
+#left-side-container .pagination{
+    position: absolute;
+    top: 70%;
+    left: 40px;
+    font-size: 25px;
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+/* Left container mein Pokemon ball image */
+#left-side-container #Pokemon-ball{
+    position: absolute;
+    opacity: 0.4;
+   top:79%
+    
+}
+
+/* Right side container beige background ke saath */
+#right-side-container{
+    width:38%;
+    height: 100%;
+    background-color:#f5e8bb;
+    position: absolute;
+    right: 0;
+    top:0;
+    
+}
+
+/* Right container mein icon */
+#right-side-container i{
+    font-size: 30px;
+    color: #2f2f2f;
+    position: absolute;
+    top: 50px;
+right: 50px;
+position: absolute;
+
+
+    
+}
+
+/* Right side mein boxes container */
+#right-side-container #boxes{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    
+}
+
+/* Individual box styling */
+#right-side-container #boxes .box{
+    width: 14px;
+    height: 14px;
+    background-color: #f4c400;;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    
+}
+
+/* First box different color ke saath */
+#right-side-container #boxes .box:nth-child(1){
+    background-color: #270f0f;
+}
+
