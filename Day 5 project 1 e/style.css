@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: 'Inter', sans-serif;
-    
+    font-family: 'Inter', sans-serif;
 }
 
 /* ============================================
@@ -16,191 +15,226 @@ html,
 body {
     height: 100%;
     width: 100%;
-      font-family: 'Inter', sans-serif;
-  }
+    font-family: 'Inter', sans-serif;
+}
 
-  /* ============================================
-     Main Container
-     ============================================ */
-  main{
-
+/* ============================================
+   Main Container
+   ============================================ */
+main {
     width: 100%;
-    min-height:100vh;
+    min-height: 100vh;
     background-color: black;
     padding: 24px 48px;
-    
-  }
+}
 
-  /* ============================================
-     Navigation Bar
-     ============================================ */
-  nav{
+/* ============================================
+   Navigation Bar
+   ============================================ */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    gap:60px;
+    gap: 60px;
     padding: 0 24px;
-  }
+}
   
-  /* Logo Icon */
-   nav #logo-icon img{
-   width:300px;
+/* Logo Icon */
+nav #logo-icon img {
+    width: 300px;
     height: auto;
-    
-   }
+}
 
-   /* Navigation Feature List */
-   nav .nav-feature-list {
+/* Navigation Feature List */
+nav .nav-feature-list {
     display: flex;
     gap: 60px;
-    
-   }
+}
 
-    /* Navigation Links */
-    nav .nav-feature-list a{
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 500;
+/* Navigation Links */
+nav .nav-feature-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+nav .nav-feature-list a:hover {
+    color: #ff5b14;
+    transform: translateY(-2px);
+}
+
+/* Get Started Button */
+nav #get-started-btn {
+    width: 160px;
+    height: 64px;
+    background-color: #111111;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    font-weight: 500;
+    margin-right: 64px;
+    align-self: center;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+nav #get-started-btn:hover {
+    background-color: #1f1f1f;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 91, 20, 0.15);
+}
+
+/* ============================================
+   Section 1 - Hero Section
+   ============================================ */
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* Main Heading */
+.section-1 #main-heading {
+    font-size: 170px;
+    font-weight: 800;
+    color: #ffffff;
+    font-family: Inter;
+    animation: fadeInScale 1s ease-out both;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
     }
-
-    /* Get Started Button */
-    nav #get-started-btn{
-      width: 160px;
-      height:64px;
-      background-color: #111111;
-      border-radius: 10px;
-      color: white;
-      font-size: 18px;
-      border:none;
-      font-weight: 500;
-      margin-right: 64px;
-      align-self: center;
-}
-  
-  /* ============================================
-     Section 1 - Hero Section
-     ============================================ */
-      .section-1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-        
-      }
-
-      /* Main Heading */
-      .section-1 #main-heading{
-        font-size: 170px;
-        font-weight: 800;
-        
-        color: #ffffff;
-        font-family: Inter;
-      }
-
-      /* Section 1 Buttons Container */
-      .section-1 .section-1-btn {
-        display: flex;
-        gap: 24px;
-        
-
-       
-      }
-
-      /* Section 1 Buttons */
-.section-1 .section-1-btn button{
- height: 58px;
- padding: 0 34px;
- border: none;
- border-radius:30px ;
- background-color: #111111;
- color: white;
- font-size: 18px;
-font-weight: 500;
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
- /* Primary Button Style */
- #section-1-btn-1{
-background-color: #ff5b14;
-color: white;
-  }
+/* Section 1 Buttons Container */
+.section-1 .section-1-btn {
+    display: flex;
+    gap: 24px;
+}
 
-  /* ============================================
-     Section 2 - Cards Section
-     ============================================ */
-  .section-2{
-       width: 100%;
-  display: flex;
-margin-top: 60px;
-  justify-content: center;
-    gap:60px;
+/* Section 1 Buttons */
+.section-1 .section-1-btn button {
+    height: 58px;
+    padding: 0 34px;
+    border: none;
+    border-radius: 30px;
+    background-color: #111111;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-      }
+.section-1 .section-1-btn button:hover {
+    background-color: #1f1f1f;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(255,255,255,0.08);
+}
 
-      /* Card Container */
-      .section-2 .cards{
-        width: 360px;
-        height: 460px;
-        display:flex;
-       
-        background-color: #0d0d0d;
-        border-radius: 28px;
-        flex-direction: column;
-        align-items: start;
-        overflow: hidden;
-        box-shadow: 0 0 20px rgba(255,255,255,0.03);
-      
-        
-        
+/* Primary Button Style */
+#section-1-btn-1 {
+    background-color: #ff5b14;
+    color: white;
+}
+
+#section-1-btn-1:hover {
+    background-color: #ff6e30;
+}
+
+/* ============================================
+   Section 2 - Cards Section
+   ============================================ */
+.section-2 {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Card Container */
+.section-2 .cards {
+    width: 360px;
+    height: 460px;
+    display: flex;
+    background-color: #0d0d0d;
+    border-radius: 28px;
+    flex-direction: column;
+    align-items: start;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255,255,255,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-2 .cards:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(255,255,255,0.08);
 }
 
 /* Card Image Container */
-.section-2 .cards .card-img{
- 
-  width: 100%;
-  overflow: hidden;
-  height: 1000px;
-  border-radius: 28px;
+.section-2 .cards .card-img {
+    width: 100%;
+    overflow: hidden;
+    height: 1000px;
+    border-radius: 28px;
 }
 
 /* Card Image */
-.card-img img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
 
+.section-2 .cards:hover .card-img img {
+    transform: scale(1.05);
 }
 
 /* Card Button */
-.section-2 .cards .card-btn{
+.section-2 .cards .card-btn {
+    height: 120px;
+    width: 90px;
+    background-color: #8a3d16;
+    border-radius: 20px;
+    color: #ff9a66;
+    font-size: 14px;
+    border: none;
+    font-weight: 500;
+    margin: 16px 24px;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
 
-  height: 120px;
- width: 90px;
-  background-color: #8a3d16;
-  border-radius: 20px;
-  color:#ff9a66;
-  font-size: 14px;
-  border:none;
-  font-weight: 500;
- margin: 16px 24px;
-
+.section-2 .cards .card-btn:hover {
+    background-color: #9b4f25;
+    transform: translateY(-2px);
 }
 
 /* Card Heading */
-.cards .card-heading{
-  font-size: 22px;
-  font-weight: 600;
-  color: white;
-  line-height: 1.2;
-  padding: 24px;
+.cards .card-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+    padding: 24px;
 }
 
 /* Card Date */
-.cards .card-date{
-  font-size: 16px;
-  color: #8f8f8f;
-  padding: 24px;
+.cards .card-date {
+    font-size: 16px;
+    color: #8f8f8f;
+    padding: 24px;
 }
 
