@@ -1,0 +1,504 @@
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+    background:#050505;
+    font-family:'Inter', sans-serif;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+main{
+    width:100%;
+    min-height:100vh;
+
+    background:#050505;
+
+    padding:40px 56px;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+nav{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:1px;
+}
+
+/* =========================================
+   LOGO TEXT
+========================================= */
+
+nav h1{
+    font-size:88px;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+    font-family:'Cormorant Garamond', serif;
+
+    line-height:0;
+}
+
+/* =========================================
+   DIVIDER ICON
+========================================= */
+
+.icon{
+    width:200px;
+
+    height:auto;
+
+    object-fit:contain;
+}
+
+/* =========================================
+   FIRST CONTAINER
+========================================= */
+
+.first-container{
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:28px;
+
+    margin-top:60px;
+
+    flex-wrap:wrap;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.cards{
+    width:300px;
+    height:520px;
+
+    background:#0d0d0d;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    border:1px solid rgba(255,138,0,0.15);
+
+    transition:0.3s ease;
+}
+
+/* =========================================
+   FIRST CARD GLOW
+========================================= */
+
+.cards:first-child{
+    box-shadow:
+    0 0 30px rgba(255,138,0,0.25);
+}
+
+/* =========================================
+   SPECIAL TAG
+========================================= */
+
+.special-icon{
+    position:absolute;
+
+    top:20px;
+    left:20px;
+
+    height:38px;
+
+    padding:0 18px;
+
+    border-radius:20px;
+
+    border:1px solid #ff8a00;
+
+    background:rgba(255,138,0,0.08);
+
+    color:#ff8a00;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    z-index:2;
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.main-card-content{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:30px;
+}
+
+/* =========================================
+   DRINK IMAGE
+========================================= */
+
+.image{
+    width:220px;
+
+    height:250px;
+
+    object-fit:contain;
+
+    margin-top:20px;
+}
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.card-heading{
+    margin-top:20px;
+
+    font-size:28px;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+    font-family:'Cormorant Garamond', serif;
+
+    text-align:center;
+}
+
+/* =========================================
+   CARD INFO
+========================================= */
+
+.card-info{
+    margin-top:8px;
+
+    font-size:16px;
+
+    color:#9b9b9b;
+
+    font-weight:400;
+}
+
+/* =========================================
+   MINI LINE
+========================================= */
+
+.mini-line{
+    width:60px;
+    height:2px;
+
+    background:#ff8a00;
+
+    margin-top:24px;
+}
+
+/* =========================================
+   PRICE
+========================================= */
+
+.price{
+    margin-top:24px;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:#ff8a00;
+}
+
+/* =========================================
+   SECOND CONTAINER
+========================================= */
+
+.second-container{
+    width:100%;
+
+    height:420px;
+
+    background:#0b0b0b;
+
+    border-radius:30px;
+
+    margin-top:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:40px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* =========================================
+   FOOD IMAGE
+========================================= */
+
+.image2{
+    width:360px;
+
+    height:auto;
+
+    object-fit:contain;
+}
+
+/* =========================================
+   CONTENT INFO
+========================================= */
+
+.content-info{
+    width:700px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+}
+
+/* =========================================
+   CHEF SPECIAL
+========================================= */
+
+#chef-special{
+    color:#ff8a00;
+
+    letter-spacing:6px;
+
+    font-size:18px;
+
+    font-weight:500;
+}
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+#main-heading{
+    margin-top:20px;
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    color:#ffffff;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-weight:600;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+#description{
+    margin-top:24px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#9b9b9b;
+
+    max-width:700px;
+}
+
+/* =========================================
+   EXPLORE BUTTON
+========================================= */
+
+#explore-btn{
+    width:240px;
+    height:70px;
+
+    border:1px solid #ff8a00;
+
+    border-radius:40px;
+
+    margin-top:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#ff8a00;
+
+    font-size:22px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+#explore-btn:hover{
+    background:#ff8a00;
+    color:#050505;
+}
+
+/* =========================================
+   FOOTER LINE
+========================================= */
+
+#footer-line{
+    width:100%;
+    height:1px;
+
+    background:rgba(255,138,0,0.3);
+
+    margin-top:60px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+    width:100%;
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+}
+
+/* =========================================
+   FOOTER CONTENT
+========================================= */
+
+.footer-content{
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+}
+
+/* =========================================
+   FOOTER TEXT
+========================================= */
+
+.footer-content p{
+    color:#9b9b9b;
+
+    font-size:16px;
+
+    font-weight:400;
+}
+
+/* =========================================
+   FOOTER NAV
+========================================= */
+
+.footer-nav{
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+}
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+.footer-nav a{
+    text-decoration:none;
+
+    color:#9b9b9b;
+
+    font-size:16px;
+
+    transition:0.3s ease;
+}
+
+.footer-nav a:hover{
+    color:#ff8a00;
+}
+
+/* =========================================
+   DOT
+========================================= */
+
+.dot{
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:#ff8a00;
+}
+
+/* =========================================
+   SOCIAL MEDIA
+========================================= */
+
+.social_media{
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+}
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social_media img{
+    width:22px;
+    height:22px;
+
+    object-fit:contain;
+}
