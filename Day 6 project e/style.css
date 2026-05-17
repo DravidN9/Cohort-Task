@@ -229,7 +229,7 @@ margin-top: 10%;
 
     background:linear-gradient(135deg,#B56CFF,#7B2DFF);
 
-    padding:2px;
+    padding:20px;
 
     display:flex;
     justify-content:space-between;
@@ -277,37 +277,38 @@ margin-top: 10%;
 
     border:2px solid #D9FF4A;
 
-    padding:28px;
+    padding:20px;
    
     display:flex;
     flex-direction:column;
     justify-content: space-evenly;
+    align-items: start;
     
-    gap: 2px;
+    gap: 20px;
 }
 
 .child5 h1{
     color:white;
-
-    font-size:85px;
+   
+    font-size:90px;
     
     line-height:.9;
 
     font-weight:800;
 
-    letter-spacing:-6px;
+    letter-spacing:-6.5px;
 }
 
 .child5 h3{
     color:#B56CFF;
 
-    margin-top:18px;
+    margin-top:10px;
 
     font-size:18px;
      
     letter-spacing:5px;
 
-    line-height:-1.6px;
+    line-height:-2px;
 }
 
 .child5 hr{
@@ -324,7 +325,7 @@ margin-top: 10%;
 
     display:flex;
     align-items:center;
-
+    justify-content: space-around;
     gap:18px;
 }
 
@@ -355,22 +356,21 @@ margin-top: 10%;
 }
 
 .barcode{
-    margin-top:auto;
+     margin-top:auto;
 
     width:100%;
     height:90px;
 
     display:flex;
-    align-items:end;
-
-    gap:4px;
+    justify-content:center;
+    align-items:center;
+    
 }
 
-.bar{
-    width:10px;
-    height:100%;
+.barcode .img{
+  
 
-    background:white;
+    object-fit:cover;
 }
 
 /* ======================== */
@@ -501,10 +501,10 @@ margin-top: 10%;
 
     background:#F5F5F5;
 
-    padding:40px;
+    padding:30px;
 
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
 }
 
 .left9{
@@ -529,16 +529,17 @@ margin-top: 10%;
 }
 
 .right9{
-    margin-right: 10px;
-    width: 40%;
+    
+    width: 30%;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    align-items: end;
+    align-items: center;
+    
 }
 
 .right9 h1{
-    font-size:70px;
+    font-size:100px;
 
     color:black;
 }
@@ -547,11 +548,11 @@ margin-top: 10%;
     display: flex;
     color:#D9FF4A;
     
-    font-size:34px;
+    font-size:30px;
 }
 
 .right9 button{
-    border:none;
+  border: none;
     width: 180px;
     height: 40px;
     background:#B56CFF;
@@ -562,10 +563,7 @@ margin-top: 10%;
     display:flex;
     align-items:center;
     gap:5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
+    
 }
 
 /* ======================== */
